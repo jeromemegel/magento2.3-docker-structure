@@ -1,0 +1,6 @@
+# Ignore custom application files
+
+/logs/*/*.log
+/data/mysql/*
+/.env
+/application/*

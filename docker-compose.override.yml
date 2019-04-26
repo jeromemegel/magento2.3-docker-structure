@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  php:
+    environment:
+      MAGE_IS_DEVELOPER_MODE: 1
+
+  phpmyadmin:
+    environment:
+      - PMA_ARBITRARY=1
+      #- PMA_HOST=
+      - PMA_USER=${MYSQL_USER}
+      - PMA_PASSWORD=${MYSQL_PASSWORD}
+      - PMA_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}

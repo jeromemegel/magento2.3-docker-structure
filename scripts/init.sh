@@ -7,7 +7,8 @@ then
     echo "Directory /application exists."
 else
     mkdir $BASEDIR/../application
-    echo "<?php phpinfo();" >> $BASEDIR/../application/index.php
+    mkdir $BASEDIR/../application/pub
+    echo "<?php phpinfo();" >> $BASEDIR/../application/pub/index.php
     echo 'Application folder with phpinfo created'
 fi
 
